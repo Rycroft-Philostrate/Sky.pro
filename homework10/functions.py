@@ -18,6 +18,6 @@ def find_candidates_skill(skill):
 	"""Поиск кандидатов по навыкам"""
 	list_candidates = []  # список кандидатов
 	for item in load_data():
-		if skill.lower() in item['skills'].lower():
+		if skill.lower() in item['skills'].lower().split(', '):
 			list_candidates.append(item)
 	return list_candidates
