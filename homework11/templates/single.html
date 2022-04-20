@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ candidate.name }}</h1>
+<p>Позиция: {{ candidate.position }}</p>
+<img src="{{ candidate.picture }}" width="200" alt="Картинка кандидата">
+<p>Навыки: {{ candidate.skills }}</p>
+
+<div><a href="/">Вернуться к списку кандидатов</a> </div>
+{% endblock %}

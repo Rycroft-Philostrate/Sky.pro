@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Найдено кандидатов: {{ count_candidate_search }}</h1>
+{% for candidate in result_search %}
+<p><a href="/candidate/{{ candidate }}">{{ candidate }}</a></p>
+{% endfor %}
+{% endblock %}

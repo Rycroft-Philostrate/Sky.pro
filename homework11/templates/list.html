@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Все кандидаты</h1>
+{% for candidate in data %}
+<p><a href="/candidate/{{ candidate.name }}">{{ candidate.name }}</a></p>
+{% endfor %}
+{% endblock %}
